@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>shapez.io Wires Update Converter</title>
+        <style>
+            body {
+                background: #eee;
+                font-family: "Noto Sans", "Segoe UI", sans-serif;
+            }
+
+            form {
+                max-width: 800px;
+                border: 1px solid #bbb;
+                padding: 1em;
+            }
+
+            form > input {
+                margin-bottom: 1em;
+                display: block;
+            }
+
+            div {
+                margin-top: 1em;
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <form action="/process" method="POST" enctype="multipart/form-data">
+                <input type="file" name="savegame" id="savegame-input" />
+                <input type="submit" value="Convert" />
+            </form>
+            <div>
+                <a href="https://github.com/dengr1065/shapezio-wires-convert">
+                    github
+                </a>
+            </div>
+        </center>
+    </body>
+</html>

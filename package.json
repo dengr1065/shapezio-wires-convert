@@ -1,0 +1,15 @@
+{
+  "name": "shapezio-wires-convert",
+  "version": "1.0.0",
+  "description": "Converts shapez.io savegames to new Wires Update schema.",
+  "main": "src/index.js",
+  "author": "dengr1065",
+  "license": "GPL-3-or-later",
+  "private": true,
+  "dependencies": {
+    "formidable": "^1.2.2",
+    "lz-string": "^1.4.4",
+    "node-fetch": "^2.6.0",
+    "rusha": "^0.8.13"
+  }
+}
