@@ -7,7 +7,8 @@ const {
     createReadStream,
     readFileSync,
     existsSync,
-    writeFileSync
+    writeFileSync,
+    mkdirSync
 } = require("fs");
 
 /**
@@ -83,6 +84,10 @@ async function onRequest(req, res) {
 }
 
 const root = "https://raw.githubusercontent.com/tobspr/shapez.io/master/";
+
+if (!existsSync("./data/")) {
+    mkdirSync("./data/");
+}
 
 if (!existsSync("./data/compressor.js")) {
     console.warn("Downloading compressor...");
